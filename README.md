@@ -9,3 +9,6 @@ UA_DETRAC是一个公开的车辆跟踪数据集, 共8万多张训练数据集�
 [UA-DETRAC](http://detrac-db.rit.albany.edu/) </br>
 </br>
 #### 训练方法
+##### (1). 使用gen_labels_detrac.py脚本预处理原始的训练数据
+##### (2). 编写ccfg文件
+##### (3). 修改opts.py文件
