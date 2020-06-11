@@ -1,4 +1,4 @@
-# FairMOTVehicle用于跟踪车辆的多目标跟踪, 自定义数据进行单类别多目标实时跟踪
+# FairMOTVehicle
 A fork of FairMOT used to do vehicle MOT(multi-object tracking).
 You can refer to origin fork </br>
 [FairMOT](https://github.com/ifzhang/FairMOT)
