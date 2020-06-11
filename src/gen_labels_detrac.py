@@ -404,20 +404,20 @@ def clean_train_set(img_root, label_root):
 
 
 if __name__ == '__main__':
-    # preprocess(src_root='/mnt/diskb/even/Insight-MVT_Annotation_Train',
-    #            dst_root='/mnt/diskb/even/dataset/DETRAC')
+    preprocess(src_root='/mnt/diskb/even/Insight-MVT_Annotation_Train',
+               dst_root='/mnt/diskb/even/dataset/DETRAC')
 
-    # gen_labels(xml_root='/mnt/diskb/even/DETRAC-Train-Annotations-XML',
-    #            img_root='/mnt/diskb/even/dataset/DETRAC/images/train',
-    #            label_root='/mnt/diskb/even/dataset/DETRAC/labels_with_ids/train',
-    #            viz_root='/mnt/diskb/even/viz_result')
+    gen_labels(xml_root='/mnt/diskb/even/DETRAC-Train-Annotations-XML',
+               img_root='/mnt/diskb/even/dataset/DETRAC/images/train',
+               label_root='/mnt/diskb/even/dataset/DETRAC/labels_with_ids/train',
+               viz_root='/mnt/diskb/even/viz_result')
 
     gen_dot_train_file(data_root='/mnt/diskb/even/dataset',
                        rel_path='/DETRAC/images/train',
                        out_root='/mnt/diskb/even/FairMOT/src/data')
 
-    # clean_train_set(img_root='/mnt/diskb/even/dataset/DETRAC/images/train',
-    #                 label_root='/mnt/diskb/even/dataset/DETRAC/labels_with_ids/train')
+    clean_train_set(img_root='/mnt/diskb/even/dataset/DETRAC/images/train',
+                    label_root='/mnt/diskb/even/dataset/DETRAC/labels_with_ids/train')
 
     count_files(img_root='/mnt/diskb/even/dataset/DETRAC/images/train',
                 label_root='/mnt/diskb/even/dataset/DETRAC/labels_with_ids')
