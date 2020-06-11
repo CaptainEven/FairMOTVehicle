@@ -15,3 +15,6 @@ UA_DETRAC是一个公开的车辆跟踪数据集, 共8万多张训练数据集�
 ###### <3>. 调用gen_dot_train_fileh函数，生成用于训练的.train文件
 ##### (2). 编写json格式的cfg文件./src/lib/cfg/detrac.json
 ##### (3). 修改opts.py文件，修改训练参数，开始训练
+###### <1>. 修改--load_model参数, 选择一个断点模型, 如 ctdet_coco_dla_2x.pth, 从这个预训练模型开始训练
+###### <2>. 修改----data_cfg参数, 选择训练、测试数据，如 ../src/lib/cfg/detrac.json
+###### <3>. python or python3 ./src/train.py启动训练进程即可。
