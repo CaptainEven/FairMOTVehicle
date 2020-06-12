@@ -7,7 +7,7 @@ You can refer to origin fork </br>
 </br>
 #### 使用UA-DETRAC公开数据集训练FairMOT(Using UA-DETRAC as training dataset for vehicle tracking)
 UA_DETRAC是一个公开的车辆跟踪数据集, 共8万多张训练数据集，每一张图的每一辆车都经过了精心的标注。</br>
-[UA-DETRAC](http://detrac-db.rit.albany.edu/) </br>
+[UA-DETRAC benchmark link](http://detrac-db.rit.albany.edu/) </br>
 
 #### 训练方法(具体调用时，根据服务器目录, 修改自定义路径)
 ##### (1). 使用gen_labels_detrac.py脚本预处理原始的训练数据(Call gen_labels_detrac.py to prepare UA-DETRAC for training)
