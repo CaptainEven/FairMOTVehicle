@@ -44,9 +44,13 @@ def preprocess(src_root, dst_root):
                         if not os.path.isdir(dst_img1_dir):
                             os.makedirs(dst_img1_dir)
 
-                        # 拷贝图片
-                        shutil.copy(y_path, dst_img1_dir)
-                        print('{} cp to {}'.format(y, dst_img1_dir))
+                        # copy image to train image dir
+                        dst_f_path = dst_img1_dir + y
+                        if os.path.isfile(dst_f_path):
+                            shutil.copy(y_path, dst_img1_dir)
+                            print('{} cp to {}'.format(y, dst_img1_dir))
+                        else:
+                            print('{} already exists.'.format(dst_f_path))
 
 
 def draw_ignore_regions(img, boxes):
